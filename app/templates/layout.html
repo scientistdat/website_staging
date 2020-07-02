@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aditya's page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="{{ url_for('home') }}">
+          <h1 class="logo">Democratizing Data</h1>
+        </a> <!-- Logo should be clickable and point to home -->
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('blog') }}">Blog</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+    <div class="footer">
+      <a href="https://www.linkedin.com/in/aditya-pawar-datascientist/"><img src="/static/images/LI-In-Bug.png" alt="LinkedIn Profile" width="35px" height="32px" style="margin-left: 20px;"></a>
+      <a href="https://github.com/scientistdat"><img src="/static/images/GitHub-Mark-32px.png" alt="GitHub Repo" width="32px" height="32px" style="margin-left: 20px;"></a>
+      <a href="https://medium.com/@scientist.dat"><img src="/static/images/medium_mono.png" alt="Medium Blog" width="32px" height="32px" style="margin-left: 20px;"></a>
+      <a href="https://twitter.com/ap_datascience"><img src="/static/images/twitter.png" alt="Twitter Page" width="32px" height="32px" style="margin-left: 20px;"></a>
+      <a href="https://www.instagram.com/adityapawar4u/"><img src="/static/images/Instagram.png" alt="Instagram Feed" width="35px" height="35px" style="margin-left: 20px;"></a>
+      <div class = "foot-right">
+        © 2020 Aditya Pawar
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Create a container on the left with links to LinkedIN, GitHub, Instagram, Medium, etc. -->
+<!-- Create a container on the right with a summary of website.-->

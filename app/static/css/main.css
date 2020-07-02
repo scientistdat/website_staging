@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+  }
+  /*
+   * Formatting the header area
+   */
+  header {
+    background-color: rgb(0, 0, 0);
+    height: 55px;
+    padding-top: 10px;
+    width: 100%;
+    opacity: .9;
+    margin-bottom: 10px;
+  }
+  header h1.logo {
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 1.3em;
+    color: #fff;
+    text-transform: uppercase;
+    float: left;
+  }
+  header h1.logo:hover {
+    color: #02E148;
+    text-decoration: none;
+  }
+  /*
+   * Centering the body content
+   */
+  .container {
+    width: auto;
+    padding-left: 5px;
+    margin: 0 auto;
+  }
+  div.home {
+    padding: 10px 0px 30px 10px;
+    background-color: whitesmoke;
+
+  }
+  div.about {
+    padding: 10px 0px 30px 10px;
+    background-color: whitesmoke;
+
+  }
+  div.blog {
+    padding: 10px 0 30px 10px;
+    background-color: whitesmoke;
+
+  }
+  div.projects {
+    padding: 10px 0 30px 10px;
+    background-color: whitesmoke;
+
+  }
+  h2 {
+    font-size: 3em;
+    margin-top: 40px;
+    text-align: center;
+    letter-spacing: -2px;
+  }
+  h3 {
+    font-size: 1.7em;
+    font-weight: 100;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: rgb(6, 13, 51);
+  }
+  .menu {
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+    background-color: rgb(0, 0, 0);
+  }
+  .menu li {
+    display: inline;
+  }
+  .menu li + li {
+    margin-left: 35px;
+  }
+  .menu li a {
+    color: #02E148;
+    text-decoration: none;
+  }
+  footer{
+    padding-left: 10px;
+    padding-inline-start: 15px;
+    height: 40px;
+    width: auto;
+    border-top: 1px solid;
+  }
+  .foot-right{
+    float: right;
+    margin-right: 30px;
+    padding-top: 10px;
+    text-align: end;
+    vertical-align: middle;
+  }
+
