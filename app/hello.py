@@ -9,7 +9,7 @@ import numpy as np
 import json
 
 def create_plot():
-    df = pd.read_csv('/static/Daily activity metrics.csv')
+    df = pd.read_csv('Daily activity metrics.csv')
     fig = go.Figure()
     fig = fig.add_trace(go.Bar(x=df['Date'],y=df['Step count']))
     fig = fig.update_layout(title_text="My Step Count",xaxis={'rangeslider':{'visible':True}})
