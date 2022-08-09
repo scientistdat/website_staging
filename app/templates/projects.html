@@ -1,40 +1,22 @@
 {% extends "layout.html" %}
 {% block content %}
-   <div class="blog">
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+
+
      <h1>My Projects</h1>
-     <p>My work.
-    </p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
-    <p>asdasdasd</p>
+     
+     <div class="blog">
+      <h2>Daily Step Count</h2>
+      <div class="chart" id="bargraph">
+        <script>
+            var graphs = {{plot|safe}};
+            Plotly.plot('bargraph',graphs,{});
+        </script>
+    </div>
+    
+    <p>More to follow.</p>
    </div>
  {% endblock %}
+
