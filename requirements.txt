@@ -1,4 +1,4 @@
-astroid==2.12.2
+astroid==2.5
 click==8.1.3
 Flask==2.2.2
 gunicorn==20.1.0
