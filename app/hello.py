@@ -32,7 +32,7 @@ def blog():
 @app.route('/projects/')
 
 def projects():
-    bar = create_plot()
+    #bar = create_plot()
     return render_template('projects.html',plot = bar)
 
 
