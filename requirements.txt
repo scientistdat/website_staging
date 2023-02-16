@@ -17,6 +17,6 @@ pytz==2022.1
 six==1.16.0
 tenacity==8.0.1
 toml==0.10.2
-Werkzeug==2.2.2
+Werkzeug==2.2.3
 wrapt==1.12.1
 clang==14.0
